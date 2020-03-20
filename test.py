@@ -56,5 +56,5 @@ def query_2_label(query_sentence):
 
 
 if __name__ == "__main__":
-    query_sentence = '狐臭怎么治？'
+    query_sentence = '听音乐'
     print(query_2_label(query_sentence))
