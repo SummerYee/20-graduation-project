@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : 王小易 / SummerYee
 # @Time    : 2020/3/20 22:25
-# @File    : 20-graduation-project a.py
+# @File    : 20-graduation-project test.py
 # @Software: PyCharm
 
 import numpy as np

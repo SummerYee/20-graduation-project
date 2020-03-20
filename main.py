@@ -6,6 +6,8 @@
 
 from test import query_label
 
+query_label('我喜欢你')
+
 while True:
     your_query_sentence = input()
     print('-' * 10)
