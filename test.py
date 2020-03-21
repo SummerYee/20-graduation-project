@@ -4,12 +4,11 @@
 # @File    : 20-graduation-project test.py
 # @Software: PyCharm
 
+import pickle
 import numpy as np
-import pandas as pd
 from keras.models import model_from_json
 from keras.preprocessing.sequence import pad_sequences
 import jieba
-import pickle
 
 
 # 加载 pickle 对象的函数
@@ -58,3 +57,14 @@ def query_label(query_sentence):
 if __name__ == "__main__":
     query_sentence = '听音乐'
     print(query_label(query_sentence))
+
+
+
+while True:
+    your_query_sentence = input()
+    print('-' * 10)
+    label = query_label(your_query_sentence)
+    print('predict label:\t', label)
+    print('-' * 10)
+    if your_query_sentence == '0':
+        break
