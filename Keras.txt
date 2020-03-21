@@ -1,0 +1,15 @@
+Thursday, February 6, 2020   1:34 PM
+
+Keras 高层神经网络库
+基于Tensorflow
+Keras模型核心为”model“
+Model 是一种组织神经网络层的方式
+
+
+Keras主要模型为Seuential模型：一系列网络层按顺序构成的栈
+add添加网络层
+激活函数：softmax
+compile（）编译模型
+训练 迭代 拟合网络
+评估
+预测
