@@ -59,7 +59,6 @@ if __name__ == "__main__":
     print(query_label(query_sentence))
 
 
-
 while True:
     your_query_sentence = input()
     print('-' * 10)
