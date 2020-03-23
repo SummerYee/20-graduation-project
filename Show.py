@@ -8,7 +8,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from Design import Ui_MainWindow
-# import  main
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -21,11 +20,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
     def display(self):
-        # 利用line Edit控件对象text()函数获取界面输入
-        username = self.input.toPlainText()
-        #password = self.pwd_lineEdit.text()
+        # 利用Test Edit控件对象text()函数获取界面输入
+        predict_label = self.input.toPlainText()
         # 利用text Browser控件对象setText()函数设置界面显示
-        self.output.setText( "用户名是: " + username)
+        self.output.setText( "Predict label: " + predict_label)
 
 
 if __name__ == "__main__":

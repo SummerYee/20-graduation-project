@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'Design.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.0
-#
-# WARNING! All changes made in this file will be lost!
+# @Author  : 王小易 / SummerYee
+# @Time    : 2020/3/23 15:21
+# @File    : 20-graduation-project Show.py
+# @Software: PyCharm
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets

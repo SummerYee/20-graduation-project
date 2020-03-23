@@ -55,7 +55,7 @@ def query_label(query_sentence):
 
 
 if __name__ == "__main__":
-    query_sentence = '听音乐'
+    query_sentence = '你生日是什么时候'
     print(query_label(query_sentence))
 
 
@@ -63,7 +63,7 @@ while True:
     your_query_sentence = input()
     print('-' * 10)
     label = query_label(your_query_sentence)
-    print('predict label:\t', label)
+    print('predict label:', label)
     print('-' * 10)
     if your_query_sentence == '0':
         break
