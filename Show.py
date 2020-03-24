@@ -8,6 +8,8 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from Design import Ui_MainWindow
+from main import query_label
+
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -21,7 +23,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def display(self):
         # 利用Test Edit控件对象text()函数获取界面输入
-        predict_label = self.input.toPlainText()
+        your_query_sentence = self.input.toPlainText()
+        predict_label = query_label(your_query_sentence)
         # 利用text Browser控件对象setText()函数设置界面显示
         self.output.setText( "Predict label: " + predict_label)
 

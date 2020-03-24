@@ -32,6 +32,9 @@
    <iconset>
     <normaloff>小易.jpg</normaloff>小易.jpg</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
@@ -45,11 +48,14 @@
      <height>16777215</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QTextEdit" name="input">
     <property name="geometry">
      <rect>
-      <x>11</x>
-      <y>33</y>
+      <x>10</x>
+      <y>40</y>
       <width>608</width>
       <height>109</height>
      </rect>
@@ -59,20 +65,20 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>310</y>
+      <y>320</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>退出</string>
+     <string>Quit</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="output">
     <property name="geometry">
      <rect>
-      <x>11</x>
-      <y>171</y>
+      <x>10</x>
+      <y>190</y>
       <width>608</width>
       <height>109</height>
      </rect>
@@ -83,38 +89,38 @@
      <rect>
       <x>11</x>
       <y>11</y>
-      <width>75</width>
-      <height>15</height>
+      <width>151</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>请输入句子</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Input sentence&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="out">
     <property name="geometry">
      <rect>
       <x>11</x>
-      <y>149</y>
-      <width>60</width>
-      <height>16</height>
+      <y>160</y>
+      <width>161</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>显示结果</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Predict label&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="run">
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>310</y>
+      <y>320</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>运行</string>
+     <string>Run</string>
     </property>
    </widget>
   </widget>
@@ -130,7 +136,9 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="C:/Users/10926/Desktop/pic.qrc"/>
+ </resources>
  <connections/>
  <slots>
   <slot>show_message()</slot>
