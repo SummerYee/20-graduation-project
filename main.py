@@ -21,14 +21,14 @@ def load_obj(name):
 max_cut_query_lenth = 26
 
 # 加载查询词汇和对应 ID 的字典
-#word_index_dict = load_obj('word_index_dict')
+word_index_dict = load_obj('word_index_dict')
 # 加载模型输出 ID 和对应标签（种类）的字典
-#index_label_dict = load_obj('index_label_dict')
+index_label_dict = load_obj('index_label_dict')
 # 加载模型结构
-model_json = load_obj('model_json_2')
+model_json = load_obj('model_json')
 model = model_from_json(model_json)
 # 加载模型权重
-model.load_weights('my_model_2.h5')
+model.load_weights('my_model.h5')
 
 
 def query_label(query_sentence):
