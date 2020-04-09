@@ -23,10 +23,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def display(self):
         # 利用Test Edit控件对象text()函数获取界面输入
-        your_query_sentence = self.input.toPlainText()
-        predict_label = query_label(your_query_sentence)
-        # 利用text Browser控件对象setText()函数设置界面显示
-        self.output.setText( "Predict label: " + predict_label)
+        #while(True):
+            your_query_sentence = self.input.toPlainText()
+            predict_label = query_label(your_query_sentence)
+            # 利用text Browser控件对象setText()函数设置界面显示
+            self.output.setText( "Predict label: " + predict_label)
+            #if your_query_sentence == '0':
+               # break
 
 
 if __name__ == "__main__":
