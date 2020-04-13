@@ -9,6 +9,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from Design import Ui_MainWindow
 from main import query_label
+from PyQt5 import QtWidgets
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -41,4 +42,6 @@ if __name__ == "__main__":
     myWin.show()
     # 程序运行，sys.exit方法确保程序完整退出。
     sys.exit(app.exec_())
+
+
 
